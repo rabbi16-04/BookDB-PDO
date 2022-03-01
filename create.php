@@ -103,7 +103,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
         // $books[] = $book;
         // $content = json_encode($books, JSON_PRETTY_PRINT);
         // file_put_contents("books.json", $content);
-        header('location: main.php');
+        header('location: index.php');
     }
 }
 ?>

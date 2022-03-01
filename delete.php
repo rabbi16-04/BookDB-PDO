@@ -24,13 +24,13 @@ if(isset($_POST["id"]) && !empty($_POST["id"]))
     $db = new Database();
     $book = new Book($db);
     $res = $book->removeData($id);
-    header('location: main.php'); 
+    header('location: index.php'); 
 } 
 else
 {
     if(empty(trim($_GET["id"])))
     {
-        header("location: main.php");
+        header("location: index.php");
         exit();
     }
 }
